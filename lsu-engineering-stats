@@ -1,0 +1,15 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+df = pd.read_csv("/Users/shelbyantill/Downloads/EngStats - Sheet1 (1).csv")
+
+df.plot(x="Degree",y=["Men", "Women"], kind="bar", color=["yellow","purple"])
+plt.title("LSU Engineering Degrees Awarded in 2020-2021")
+plt.ylabel("Graduates")
+
+
+plt.show()
+print(df)
+
+
+
