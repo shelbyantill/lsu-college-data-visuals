@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-csv="/Users/shelbyantill/Downloads/Tuition_Undergrads_Annuals - Sheet1.csv"
+csv="lsu-data-visuals/lsu_annual_undergrad_tuition.csv"
 
 df = pd.read_csv(csv)
 
