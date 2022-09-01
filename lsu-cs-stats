@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-csv = "/Users/shelbyantill/Downloads/LSU_CS_Stats - Sheet1 (2).csv"
+csv = "lsu-data-visuals/lsu_cs_stats.csv"
 df = pd.read_csv(csv)
 ethnicity = df["Etnicities"]
 grads = df["Graduates"]
