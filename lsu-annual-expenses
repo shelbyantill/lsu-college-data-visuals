@@ -1,0 +1,23 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+csv="/Users/shelbyantill/Downloads/Tuition_Undergrads_Annuals - Sheet1.csv"
+
+df = pd.read_csv(csv)
+
+ax = df.plot(kind = "line", x = "Year", y ="Annual Expenses",color="purple")
+ax2= df.plot(kind = "line", x ="Year", y = "Graduates", color="yellow", ax=ax, secondary_y =True)
+
+ax.set_xlabel("Year")
+ax.set_ylabel("Annual Expenses ($)")
+ax2.set_ylabel("Graduates")
+plt.title("LSU Annual Expenses and Baccalaureate Graduates")
+
+df.plot(x="Year",y=["Graduates","Annual Expenses"], kind="line", color=["yellow","purple"])
+
+
+plt.title("LSU Annual Expenses and Baccalaureate Graduates")
+
+
+plt.show()
