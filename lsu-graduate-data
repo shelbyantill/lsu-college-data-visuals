@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-csv = "/Users/shelbyantill/Downloads/Total_LSU_Grads - Sheet1.csv"
+csv = "lsu-data-visuals/total_lsu_grads.csv"
 df = pd.read_csv(csv)
 
 df.plot(x="College", kind="bar", color=["purple"])
