@@ -1,0 +1,13 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+csv = "/Users/shelbyantill/Downloads/LSU_CS_Stats - Sheet1 (2).csv"
+df = pd.read_csv(csv)
+ethnicity = df["Etnicities"]
+grads = df["Graduates"]
+purple_colors=["#5e376e","#4d225e","#401c4f","#e3d1eb","#c1a7cc","#a481b3","#775087"]
+
+plt.pie(grads,labels=ethnicity, colors=purple_colors, autopct= "%.1f%%", pctdistance=1.2, labeldistance=1.4)
+plt.title("LSU Computer Science-BS Graduates 2020-2021")
+
+plt.show()
+
